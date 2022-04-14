@@ -23,7 +23,7 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS := \
 PRODUCT_PUBLIC_SEPOLICY_DIRS := \
     $(PRODUCT_PUBLIC_SEPOLICY_DIRS) \
     $(SEPOLICY_PATH)/generic/product/public \
-    $(SEPOLICY_PATH)/qva/product/public 
+    $(SEPOLICY_PATH)/qva/product/public
 
 PRODUCT_PRIVATE_SEPOLICY_DIRS := \
     $(PRODUCT_PRIVATE_SEPOLICY_DIRS) \
@@ -48,4 +48,4 @@ ifneq (,$(filter sdm660 msm8937 msm8953 msm8996 msm8998, $(TARGET_BOARD_PLATFORM
     endif
 endif
 
--include device/arrow/sepolicy/qcom/sepolicy.mk
+-include device/krypton/sepolicy/qcom/sepolicy.mk
